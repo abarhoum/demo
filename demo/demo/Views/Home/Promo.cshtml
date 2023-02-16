@@ -1,0 +1,10 @@
+﻿@model Sitecore.Data.Items.Item
+<div class="coupon">
+    <div class="container">
+        <h3>@Html.Sitecore().Field("Title")</h3>
+    </div>
+    @Html.Sitecore().Field("Image", new { style = "width:100%;height: auto;" })
+    <div class="container" style="background-color:white">
+        @Html.Sitecore().Field("Content")
+    </div>
+</div>

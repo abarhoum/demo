@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/assets/main.css" />
+    <title>Main</title>
+</head>
+<body>
+    <!-- Menu Navigation Bar -->
+    @Html.Sitecore().Placeholder("header")
+    
+
+    <!-- Body section -->
+   
+    <main class="body_sec">
+        <section id="Content">
+            @Html.Sitecore().Placeholder("body")
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    @Html.Sitecore().Placeholder("footer")
+    
+</body>
+</html>
